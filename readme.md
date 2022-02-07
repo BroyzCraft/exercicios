@@ -1,1 +1,1 @@
-Projeto de exercicois para o curso de REACT.
+Projeto de exercicios para o curso de REACT.
