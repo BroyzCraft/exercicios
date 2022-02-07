@@ -7,14 +7,16 @@ import { View, StyleSheet } from "react-native"
 // import Estilo from './components/style'
 // import Aleatorio from './components/Aleatorio'
 // import Botao from './components/Botao'
-import Contador from './components/Contador'
+// import Contador from './components/Contador'
+import BG from './components/bgimg'
 
 export default () => (
     <View style={style.App}>
 
-        <Contador inicial={100}/>
-
+        <BG />
+ 
         {/* 
+        <Contador inicial={100}/>
         <Botao></Botao>
         <MinMax min={1} max={50} />
         <MinMax min="Um" max="Cinquenta" />
@@ -33,8 +35,8 @@ export default () => (
 const style = StyleSheet.create({
     App: {
         flexGrow: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 20,
+        // justifyContent: 'center',
+        // alignItems: 'center',
+        // padding: 20,
     }
 })

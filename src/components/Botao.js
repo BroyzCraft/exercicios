@@ -1,5 +1,5 @@
 import React from "react"
-import { Button } from 'react-native'
+import { Button, StyleSheet } from 'react-native'
 
 export default props => {
 
@@ -14,3 +14,11 @@ export default props => {
         />
     )
 }
+
+const style = StyleSheet.create({
+    button: {
+        width: 600,
+        height: 600,
+        backgroundColor: '#FFF'
+    }
+})

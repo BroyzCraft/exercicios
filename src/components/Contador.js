@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Button, Text } from 'react-native'
+import { Button, Text, StyleSheet } from 'react-native'
 import Estilo from './style'
 
 export default props => {
@@ -11,10 +11,17 @@ export default props => {
     const dec = () => setNumero(numero - 1)
 
     return (
-        <>
+        <React.Fragment>
             <Text style={Estilo.fontG}>{numero}</Text>
-            <Button title="+" onPress={inc}  />
-            <Button title="-" onPress={dec}  />
-        </>
+            <Button style={style.layoutBT} title="     -     " onPress={dec}  />
+            <Button style={style.layoutBT} title="     +     " onPress={inc}  />
+        </React.Fragment>
     )
 }
+
+const style = StyleSheet.create({
+    layoutBT: {
+        width: 600,
+        height: 600
+    }
+})
