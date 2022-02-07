@@ -6,14 +6,17 @@ import { View, StyleSheet } from "react-native"
 // import CompPadrao , { Comp1, Comp2 } from './components/Mults'
 // import Estilo from './components/style'
 // import Aleatorio from './components/Aleatorio'
-import Botao from './components/Botao'
+// import Botao from './components/Botao'
+import Contador from './components/Contador'
 
 export default () => (
     <View style={style.App}>
 
-        <Botao></Botao>
+        <Contador inicial={100}/>
 
-        {/* <MinMax min={1} max={50} />
+        {/* 
+        <Botao></Botao>
+        <MinMax min={1} max={50} />
         <MinMax min="Um" max="Cinquenta" />
 
         <Primeiro texto="Teste de Texto passado por parametro"/>
